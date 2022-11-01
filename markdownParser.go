@@ -6,6 +6,7 @@ import(
     "bufio"
     "log"
 )
+
 func ParseToMarkdown(fileName string) ([]byte) {
 	file, err := os.Open(fileName)
     checkError(err)
