@@ -24,6 +24,13 @@ func main() {
 	dir := os.Args[1]
 	regex, err := regexp.Compile(".*.md$")
 	checkError(err)
+
+
+    file, err := os.Create(fmt.Sprintf("%s/output.html", dir))       // creates a file at current directory
+    if err != nil {
+            fmt.Println(err)
+    }
+    defer file.Close()
 	filePathErr := filepath.Walk(dir, func(path string, info fs.FileInfo, err error) error {
 		if info.IsDir() {
 			return err
@@ -32,7 +39,8 @@ func main() {
 			return err
 		}
 		outputFile := ParseToMarkdown(path)
-        fmt.Println(convertToHtml(outputFile)) //TODO: Write to file
+        md := markdown.New(markdown.HTML(true))
+        md.Render(file, outputFile)
 		return err
 	})
 	checkError(filePathErr)
