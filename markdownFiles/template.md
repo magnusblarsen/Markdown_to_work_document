@@ -1,49 +1,44 @@
-androidC = Android Chrome v106 TODO
-iphoneS = Iphone Safari v15.7 TODO
-iphoneC = Iphone Chrome v106 TODO
+pcEdge = Microsoft Edge v107
+pcChrome = Google Chrome v107
+pcFirefox = Firefox v106
 
-pcEdge = Microsoft Edge v105
-pcChrome = Google Chrome v106
-pcFirefox = Firefox v105
+macSafari = Mac Safari v15.6
+macChrome = Mac Google Chrome v107
 
-macSafari = Safari v15.3
-macChrome = Google Chrome v106
+mobilChrome = Android Google Chrome v107
+iphoneSafari = Iphone Safari v15.7
+iphoneChrome = Iphone Google Chrome v107
 
-mobilChrome = Android Google Chrome v106
-iphoneSafari = Safari v15.3
-iphoneChrome = Google Chrome v106
+tabletChrome = Tablet Google Chrome v105
+ipadSafari = Ipad Safari v15.5
+ipadChrome = Ipad Google Chrome v105
 
-tabletChrome = Google Chrome v103
-ipad = TODO
+loginBrugtTitle = <span style="text-decoration: underline">Login brugt til test:</span>
 
-
-loginBrugtTitle = <span style="text-decoration: underline">Login brugt til test:</span> //TODO
 1 = Kosmetisk
 2 = Irriterende
 3 = Kritisk
 \
-# TODO
+### TODO:
 
-### TODO
+Alvorlighedsgrad: TODO:
 
-Alvorlighedsgrad: TODO
-
-Browser: TODO
+Browser: TODO:
 
 $loginBrugtTitle
 - mort088k
 
-Beskrivelse:
-
-TODO
+### Beskrivelse:
+TODO:
 
 DROPBOX LINK
 
 
-Links:
-- TODO
+### Links:
+- Test: TODO:
 
-**Acceptance criteria:**
+### Acceptance criteria:
 1. Naviger til ovenstående link på en mobil.
+2. TODO:
 
 ---
