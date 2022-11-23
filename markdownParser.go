@@ -11,13 +11,13 @@ func ParseToMarkdown(fileName string) ([]byte) {
 	file, err := os.Open(fileName)
     checkError(err)
 
+    defer file.Close()
+
     fileScanner := bufio.NewScanner(file)
     fileScanner.Split(bufio.ScanLines)
 
     ScanVariables(fileScanner)
     parsedData := ReplaceVariables(fileScanner)
-
-    file.Close()
 
     return parsedData
 }
@@ -76,6 +76,7 @@ func ReplaceVariables(fileScanner *bufio.Scanner) []byte {
             parsedData = append(parsedData, []byte(variables[string(parsedVariable)])...)
             parsedVariable = make([]rune, 0)
         }
+
         for i, v := range line {
             if v == '$' {
                 parsingVariable = true
