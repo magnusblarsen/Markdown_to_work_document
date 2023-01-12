@@ -42,7 +42,7 @@ DROPBOX LINK
 - Test: TODO:
 
 ### Acceptance criteria:
-1. Naviger til ovenstående link på en mobil.
+1. Naviger til ovenstående link.
 2. TODO:
 
 ---
