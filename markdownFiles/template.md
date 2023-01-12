@@ -19,6 +19,10 @@ loginBrugtTitle = <span style="text-decoration: underline">Login brugt til test:
 2 = Irriterende
 3 = Kritisk
 \
+Hej Lasse :)
+Her kommer der tests til $pcEdge, $pcChrome, $pcFirefox, $macSafari, $macChrome, $mobilChrome, $iphoneSafari, $iphoneChrome, $tabletChrome, $ipadSafari, $ipadChrome
+## <navn på test-komponent>
+
 ### TODO:
 
 Alvorlighedsgrad: TODO:
